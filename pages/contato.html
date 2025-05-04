@@ -22,6 +22,7 @@
             <header>
                 <h1>Contato</h1>
             </header>
+            <!-- Formulário para Envio da mensagem -->
             <form action="">
                 <fieldset>
                    <legend>Entre em contato!</legend>
@@ -35,7 +36,7 @@
                     </div>
                     <div class="form-box">
                         <label for="mensagem">Mensagem:</label>
-                        <textarea id="mensagem" cols="20" rows="5" name="" id=""></textarea>
+                        <textarea id="mensagem" cols="20" rows="5" name=""></textarea>
                     </div>
 
                     <button id="send">Enviar</button>
@@ -44,9 +45,11 @@
         </section>
     </main>
     <footer>
-        <p>Feito por <a href="">Rikelmy Lopes</a></p>
+        <p>Feito por <a href="https://github.com/Rikelmy-Lopes">Rikelmy Lopes</a></p>
     </footer>
     <script>
+        // Codigo javascript para exibir uma mensagem na tela ao clicar no botão enviar
+        // e limpar o valor de cada um dos inputs
         const sendButton = document.querySelector("#send");
 
         sendButton.addEventListener('click', () => {

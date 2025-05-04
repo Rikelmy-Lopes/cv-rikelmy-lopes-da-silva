@@ -1,15 +1,19 @@
+/* Css utilizado para a estilização do Header */
 
+/* Define o header como sendo sempre fixo no topo da pagina */
 #main-header {  
     position: fixed;
     left: 0px;
     top: 0px;
 }
 
+/* Define a altura e comprimento do header, com o header tendo o comprimento total da tela e uma altura de 50px */
 #main-header, #nav-header {
     width: 100%;
     height: 50px;
 }
 
+/* Define o header como sendo flex, assim deixando o site mais responsivo */
 #nav-header {
     display: flex;
     align-items: center;
@@ -18,6 +22,7 @@
     box-shadow: 0px 5px 20px #171a21;
 }
 
+/* Define a estilização dos Links do Header */
 #nav-header > .links {
     color: rgb(185, 185, 185);
     font-weight: 700;
@@ -26,6 +31,7 @@
     transition: 0.5s;
 }
 
+/* Efeito ao passar o mouse encima nos links */
 #nav-header > .links:hover {
     color: white;
     font-size: 22px;
