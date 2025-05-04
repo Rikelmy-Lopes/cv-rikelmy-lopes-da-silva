@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <header id="main-header">
@@ -16,7 +18,43 @@
         </nav>
     </header>
     <main>
-        <h1>Contato</h1>
+        <section id="main-section">
+            <header>
+                <h1>Contato</h1>
+            </header>
+            <form action="">
+                <fieldset>
+                   <legend>Entre em contato!</legend>
+                    <div class="form-box">
+                        <label for="nome">Nome:</label>
+                        <input id="nome" name="name" type="text">
+                    </div>
+                    <div class="form-box">
+                        <label for="email">Email:</label>
+                        <input id="email" name="email" type="email">
+                    </div>
+                    <div class="form-box">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" cols="20" rows="5" name="" id=""></textarea>
+                    </div>
+
+                    <button id="send">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
     </main>
+    <footer>
+        <p>Feito por <a href="">Rikelmy Lopes</a></p>
+    </footer>
+    <script>
+        const sendButton = document.querySelector("#send");
+
+        sendButton.addEventListener('click', () => {
+            window.alert("Mensagem enviada com Sucesso!!!");
+
+            document.querySelectorAll('input')
+                .forEach((i) => i.value = '');
+        })
+    </script>
 </body>
 </html>
