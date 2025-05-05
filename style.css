@@ -22,8 +22,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* Adiciona 50px de padding encima e embaixo e 200px nas laterais */
-    padding: 50px 200px;
+    /* Adiciona 50px de padding encima e embaixo e 350px nas laterais */
+    padding: 50px 350px;
 }
 
 #main-section > header > h1 {
